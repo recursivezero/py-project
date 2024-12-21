@@ -7,14 +7,16 @@ Creating a tool which ask user to upload resume file and this will generate audi
 
 ## How to Start
 
-below are the steps 
+below are the steps
 
 ### pre-requisite
 
 1. Install python v 3.11 and higher
 2. Install virtual environment package `venv`  and other useful package
-  
-  > pip install venv pipreqs vulture 
+
+```sh
+  pip install venv pipreqs vulture
+```
 
 ### Create virtual environment, which create `.venv` folder
 
@@ -25,7 +27,7 @@ below are the steps
 ### Activate the virtual environment
 
 ```sh
-  > source ~/some/path/to/.venv/bin/activate
+  source ~/some/path/to/.venv/bin/activate
 ```
 
 Note: to verify the activation of virtual environment, check does folder name (`.venv`) displayed ahead of terminal prompt.
@@ -33,7 +35,7 @@ Note: to verify the activation of virtual environment, check does folder name (`
 ### Create requirement txt file
 
 ```sh
- pipreqs . --force --ignore .venv   
+ pipreqs . --force --ignore .venv
 ```
 
 this will create **requirements.txt** file
@@ -41,7 +43,7 @@ this will create **requirements.txt** file
 ### Install required dependencies
 
 ```sh
-> python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 Note: to check all installed package, run `python3 -m pip list`
@@ -49,14 +51,14 @@ Note: to check all installed package, run `python3 -m pip list`
 ### Run the application
 
 ```sh
-  streamlit run app.py
+streamlit run app.py
 ```
 
 Open [http://localhost:8085/](http://localhost:8085/)
 
 Note: to change the port; create `.streamlit/config.toml` file inside `scripts` folder and write below
 
-```toml
+```yaml
 [server]
 port = 8085
 ```
