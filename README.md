@@ -7,7 +7,7 @@ Creating a tool which ask user to upload resume file and this will generate audi
 
 ## How to Start
 
-below are the steps
+This was generated initially from bolt.new and using supabase
 
 ### pre-requisite
 
@@ -27,7 +27,7 @@ below are the steps
 ### Activate the virtual environment
 
 ```sh
-  source ~/some/path/to/.venv/bin/activate
+source ~/some/path/to/.venv/bin/activate
 ```
 
 Note: to verify the activation of virtual environment, check does folder name (`.venv`) displayed ahead of terminal prompt.
@@ -35,7 +35,7 @@ Note: to verify the activation of virtual environment, check does folder name (`
 ### Create requirement txt file
 
 ```sh
- pipreqs . --force --ignore .venv
+pipreqs . --force --ignore .venv
 ```
 
 this will create **requirements.txt** file

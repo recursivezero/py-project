@@ -8,7 +8,8 @@ HEADER_HTML = """
 
 TITLE = ":blue[Upload Resume]"
 
-DESCRIPTION = ("This application allows you to upload resume in pdf, docx, png format.")
+
+DESCRIPTION = "This application allows you to upload resume in pdf, docx, png format."
 
 SINGLE_IMAGE = ":green[Single image]"
 GROUP_IMAGE = ":green[Group image]"
